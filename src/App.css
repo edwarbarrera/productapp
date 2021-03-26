@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+  display:flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root>  :first-child{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex:1 1 1;
+  margin: 1em;
+}
+#root>  :last-child{
+  flex:7 3 0;
+  margin: 1em;
+
 }
 
-.App-link {
-  color: #61dafb;
+  #tr{
+    display: flex;
+    flex-direction: row;
+   flex:10 3 1;
+   margin: 1em;
+    align-content: center;
+  }
+    
+
+nav{
+  background-color: rosybrown   ;
+}
+nav > button:first-child {
+  margin-bottom: 1em;
+  background-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav > button:first-child {
+  margin-bottom: 1em;
 }
+
+ 
+
+.table{
+  background-color: cadetblue;
+   box-sizing: content-box;
+ border: 2px solid red;
+ 
+  margin: 1em;
+}
+/*
+* {
+    border: 1px solid rebeccapurple;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+/*
+.form-control {
+    display: flex;
+    margin-bottom: 1em;
+     1 em = 17px
+
+}*/
+/*
+.form-control>* {
+    /*on affecte tous les enfants*/
+ /*   flex: 1 1 0;
+
+}
+
+
+.form-control:first-child {
+
+    flex-grow: 3;
+
+.form-control:nth-child(2) {
+    flex-grow: 7;
+}
+
+.form-control-submit {
+    display: flex;
+    justify-content: justify;
+}
+
+ #root {
+  display: flex;
+}
+#root > :first-child {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  margin: 1em;
+}
+#root > :last-child {
+  flex: 7 1 0;
+  margin: 1em;
+}
+
+
+
+ */
+ * {
+  border: 1px solid rebeccapurple;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
